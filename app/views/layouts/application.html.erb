@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" media="all" href="/assets/application-fea72c50671dca69b3229a01e4c014d4032caa4f8c13e64c5a91d1ecb61994b1.css" data-turbolinks-track="reload">
+    <script src="/packs/js/application-b973976b9a0d931abb64.js" data-turbolinks-track="reload"></script>
+    <title><%= yield(:title) %></title>
+    <meta charset="utf-8">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="5ZWl+DPEdeeaM8LTJshWDgItIWvhIgWk6RHBHthRyKtiqV8e3N9/0GLD5NHKZbmgxGtmPjoTa0Fzdm750S5cVw==">
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
