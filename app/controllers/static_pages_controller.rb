@@ -8,9 +8,6 @@ class StaticPagesController < ApplicationController
   def resume
   end    
 
-  def blog
-  end    
-
   def contact
   end
 end
